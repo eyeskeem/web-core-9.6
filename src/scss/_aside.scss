@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Bold.ttf);
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Medium.ttf);
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Thin.ttf);
+    font-weight: 100;
+    font-style: thin;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 768px;
+    width: 100%;
+    background-color: white
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+    width: 320px;
+    min-width: 0;
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    background-color: white;
+    box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.aside-header {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    gap: 16.73px;
+}
+.button-icons {
+    border: none;
+    background-color: white;
+}
+.aside-header button:first-child {
+    transition: all 1s ease;
+}
+.aside-header button:first-child:hover {
+    opacity: 1;
+    transform: translateY(-10%);
+}
+.aside-header button:nth-child(2) {
+   transition: transform 1s ease-in;
+}
+.aside-header button:nth-child(2):hover {
+    transform: perspective(100px) rotateX(50deg);
+    transition: transform 1s ease-out;
+}
+.aside-header button:last-child {
+    margin-left: auto;
+    margin-right: 24px;
+    transition: all 1s ease;
+}
+.aside-header button:last-child:hover {
+    opacity: 1;
+    transform: translateY(-10%);
+}
+
+
+
+.aside-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 53px;
+    margin-bottom: 20px;
+}
+
+.a-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 100%;
+    padding-left: 24px;
+    background-color: white;
+
+    font-family: 'TTlakes';
+    font-weight: 500;
+    font-size: 16px;
+}
+.tecnic {
+    position: relative;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0px;
+    color: #7E7E82;
+}
+.a-button:focus {
+    color: #7E7E82;
+}
+
+
+
+.aside-contact__icons {
+    display: flex;
+    margin-left: 24px;
+    gap: 16px;
+    margin-top: auto;
+}
+.contact-icons {
+    border: none;
+    background-color: white;
+}
+.aside-contact__icons button:first-child:hover {
+    transition: all 1s ease;
+    opacity: 1;
+    transform: translateY(-10%);
+}
+.aside-contact__icons button:nth-child(2):hover {
+    transition: all 1s ease;
+    opacity: 1;
+    transform: translateY(-10%);
+}
+.aside-contact__icons button:last-child:hover {
+    transition: all 1s ease;
+    opacity: 1;
+    transform: translateY(-10%);
+}
+.aside-contact__info {
+    margin-top: 16px;
+    margin-left: 24px;
+    font-size: 16px;
+
+    font-family: 'TTlakes';
+    font-size: 400;
+    font-size: 16px;
+}
+.mail {
+    transition: font-size 1s ease;
+}
+.mail:hover {
+    font-size:18px;
+    color: #df39a7;
+}
+.aside-contact__info .number {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+.aside-lang {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 24px;
+    gap: 7px;
+
+    font-family: 'TTlakes';
+    font-weight: 400;
+    font-size: 16px;
+}
+.lang {
+    border: none;
+    background-color: white;
+
+    animation: pulse 1s infinite;
+
+    font-family: 'TTlakes';
+    font-weight: 400;
+    font-size: 16px;
+}
+.lang:focus {
+    color: #7E7E82;
+}
+.lang:first-child {
+    color: #7E7E82;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

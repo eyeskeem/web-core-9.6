@@ -7,10 +7,146 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <title>Adaptive design</title>
+</head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
+
+     <aside>
+        <div class="aside-header">
+            <button class="button-icons"><img src="icons/burger.svg"></button>
+            <button class="button-icons"><img src="icons/Group.svg"></button>
+            <button class="button-icons"><img src="icons/search.svg"></button>
+        </div>
+        
+        <div class="aside-buttons">
+            <button class="a-button tecnic">
+                <img src="icons/highlight.svg">Ремонт техники
+            </button>
+            <button class="a-button">Услуги и сервисы</button>
+            <button class="a-button">Корпоративным клиентам</button>
+            <button class="a-button">Продавцам техники</button>
+            <button class="a-button">Партнерам</button>
+            <button class="a-button">Производителям</button>
+            <button class="a-button">Наши сервисные центры</button>
+            <button class="a-button">Контакты</button>
+        </div>
+
+        <div class="aside-contact__icons">
+            <button class="contact-icons"><img src="icons/chat copy.svg"></button>
+            <button class="contact-icons"><img src="icons/chat.svg"></button>
+            <button class="contact-icons"><img src="icons/profile.svg"></button>
+        </div>
+
+        <div class="aside-contact__info"> 
+            <p class="mail">mail@cps.com</p>
+            <p class="number">8 800 890 8900</p>
+        </div>    
+        
+        <div class="aside-lang">
+            <button class="lang">RU</button>
+            <button class="lang">EN</button>
+            <button class="lang">CH</button>
+        </div>
+    </aside>
+
+    <header>
+        <div class="burger_and_logo">
+            <img class="burger" src="img/burger.svg" alt="">
+            <span class="vertical_bar"></span>
+            <img class="CPS_logo" src="img/cps.svg" alt="">
+        </div>
+
+        <div class="pad_icons">
+            <img src="img/Mobile.svg" alt="">
+            <img src="img/chat.svg" alt="">
+            <img src="img/profile.svg" alt="">
+        </div>
+
+        <div class="repair_and_checkstatus">
+            <span class="vertical_bar2"></span>
+            <img src="img/repair.svg" alt="">
+            <img src="img/checkstatus.svg" alt="">
+        </div>
+        <div class="blue-line"></div>
+    </header>
+
+    <section class="section_h1">
+      <img class="h1_blue--bar" src="img/highlight.svg" alt="">
+      <h1 class="service_and_status">Услуги и сервисы</h1>
+    <div class="pc_icons">
+      <div class="repair_pc">
+        <span>Оставить заявку</span>
+        <img src="img/repair.svg" alt="">
+      </div>
+    </div>
+    <div class="status_pc">
+      <span>Статус ремонта</span>
+      <img src="img/checkstatus.svg" alt="">
+    </div>
+    </section>
+         
+    <nav class="buttons">
+      <div class="buttons_scroll">    
+        <button class="navigation">Ремонируемые бренды</button>
+        <button class="navigation">Ремонтируемые устройства</button>
+        <button class="navigation">Цена на услуги</button>
+        <button class="navigation">Адреса сервисных центров</button>
+        <button class="navigation">Специальные цены</button>
+        <button class="navigation">Отзывы</button>
+      </div>    
+    </nav>
+
+    <main class="page">
+        <div class="text-content">
+            <p class="first_block">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. 
+            </p>
+            <p class="second_block">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
+                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+            </p>
+            <div class="read_more">
+                <img class="read_more--arrow" src="img/expand.svg" alt=""> 
+                <span class="read_more--text">Читать далее</span>
+            </div>
+        </div>
+        <img class="CPS_photo" src="img/_MG_3223.jpg" alt="">
+    </main>
+
+    <section class="swiper__brend-cards">
+    <img class="blue-line" src="img/line.svg" alt="">
+    <h1 class="repair-h1">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide "><img src="img/apple.svg" alt=""></div>
+            <div class="swiper-slide "><img src="img/acer.svg" alt=""></div>
+            <div class="swiper-slide "><img src="img/bosch.svg" alt=""></div>
+            <div class="swiper-slide "><img src="img/hp.svg" alt=""></div>
+            <div class="swiper-slide "><img src="img/lenovo.svg" alt=""></div>
+            <div class="swiper-slide "><img src="img/apple(copy).svg" alt=""></div>
+            <div class="swiper-slide hidden"><img src="img/apple.svg" alt=""></div>
+            <div class="swiper-slide hidden"><img src="img/apple.svg" alt=""></div>
+            <div class="swiper-slide hidden hidden_pc"><img src="img/apple.svg" alt=""></div>
+            <div class="swiper-slide hidden hidden_pc"><img src="img/apple.svg" alt=""></div>
+            <div class="swiper-slide hidden hidden_pc"><img src="img/apple.svg" alt=""></div>
+            <div class="swiper-slide hidden hidden_pc"><img src="img/apple.svg" alt=""></div>
+        </div>
+        <div class="open-hide">
+            <button class="show-more" type="button">
+            <img class="show-more__icon" src="img/expand.svg">
+            <span>Показать всё</span>
+            </button>
+        </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </section>
+
   </body>
 </html>

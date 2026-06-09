@@ -2,16 +2,24 @@ $bgColor: #24292e;
 $text: #fff;
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Bold.ttf);
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Medium.ttf);
+    font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'TTlakes';
+    src: url(../fonts/TTLakes-Regular.ttf);
+    font-weight: 400;
+    font-style: regular;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import './swiper';
+@import './header';
+@import './aside';
