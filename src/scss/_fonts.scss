@@ -1,0 +1,16 @@
+$font-path: '../fonts/';
+$font-family-main: 'TTlakes';
+
+@mixin font-face($file, $weight, $style: normal) {
+@font-face {
+    font-family: $font-family-main;
+    src: url('#{$font-path}#{$file}.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    }
+}
+
+@include font-face('TTLakes-Regular', 400);
+@include font-face('TTLakes-Medium', 500);
+@include font-face('TTLakes-Bold', 700);

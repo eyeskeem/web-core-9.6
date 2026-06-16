@@ -26,6 +26,7 @@
     overflow-y: auto;
     width: 100%;
     max-width: 320px;
+    margin-top: 32px;
 }
 
 .blue-line {
@@ -89,7 +90,7 @@
 
 
 
-@media (min-width: 321px) and (max-width: 768px){
+@media(min-width: 768px) and (max-width: 1365px){
 
     .swiper-pagination {
         display: none;
@@ -106,15 +107,15 @@
     }
 
     .swiper__brend-cards {
-        max-width: 768px;
+        max-width: 100%;
     }
     .swiper {
-        max-width: 768px;
+        max-width: 100%;
         padding: 24px;
     }
     .swiper-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(224px, 1fr));
         gap: 16px 24px;
     }
 
@@ -126,6 +127,12 @@
     }
     .swiper-slide img {
         width: 100%;
+    }
+
+    .blue-line {
+        height: 1px;
+        max-width: 100%;
+        background-color: #D9FFF5;
     }
 
 
@@ -165,9 +172,9 @@
 
 
 
-@media (min-width: 769px) {
+@media(min-width: 1366px) {
 
-    .swiper-pagination {
+    .swiper-pagination-brands {
         display: none;
     }
 
@@ -181,27 +188,34 @@
     font-weight: 400;
 }
 
-    .swiper__brend-cards {
-        max-width: 1120px;
+    .swiper__brand-cards {
+        max-width: 100%;
+        background-color: white;
     }
     .swiper {
-        max-width: 1120px;
+        max-width: 100%;
         padding: 32px;
     }
     .swiper-wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 240px);
-        gap: 16px 32px;
+        grid-template-columns: repeat(4, minmax(240px, 1fr));
+        gap: 16px 20px;
     }
 
 
-    .swiper-slide {
+    .swiper__brand-cards .swiper-slide {
         width: 240px;
         height: 72px;
         margin-left: 0;
     }
     .swiper-slide img {
         width: 100%;
+    }
+
+    .blue-line {
+        height: 1px;
+        max-width: 100%;
+        background-color: #D9FFF5;
     }
 
 
@@ -231,6 +245,84 @@
     transition: transform 0.3s ease;
     }
     .show-more.open .show-more__icon {
+    transform: rotate(180deg);
+    }
+
+
+    
+    // РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
+
+    .swiper-pagination-video {
+        display: none;
+    }
+
+    .repair-h1 {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 32px;
+        color: #7E7E82;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 400;
+}
+
+    .swiper__video-tech {
+        max-width: 100%;
+        background-color: white;
+    }
+    .swiper {
+        max-width: 100%;
+        padding: 32px;
+    }
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(240px, 1fr));
+        gap: 16px 20px;
+    }
+
+
+    .swiper__video-tech .swiper-slide {
+        width: 240px;
+        height: 160px;
+        margin-left: 0;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .blue-line {
+        height: 1px;
+        max-width: 100%;
+        background-color: #D9FFF5;
+    }
+
+
+    .show-more-video {
+        margin-top: 24px;
+        border: none;
+        background: transparent;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1C21;
+        cursor: pointer;
+    }
+
+
+    .show-more-video {
+        display: flex;
+        align-items: center;
+    }
+    .hidden_video-pc {
+        display: none;
+    }
+    .hidden_video-pc.show {
+        display: flex;
+    }
+    .show-more__video {
+    transition: transform 0.3s ease;
+    }
+    .show-more.open .show-more__video {
     transform: rotate(180deg);
     }
 }

@@ -1,25 +1,38 @@
 $bgColor: #24292e;
 $text: #fff;
 
-@font-face {
-    font-family: 'TTlakes';
-    src: url(../fonts/TTLakes-Bold.ttf);
-    font-weight: 700;
-    font-style: bold;
-}
-@font-face {
-    font-family: 'TTlakes';
-    src: url(../fonts/TTLakes-Medium.ttf);
-    font-weight: 500;
-    font-style: medium;
-}
-@font-face {
-    font-family: 'TTlakes';
-    src: url(../fonts/TTLakes-Regular.ttf);
-    font-weight: 400;
-    font-style: regular;
+@import './aside';
+@import './fonts';
+@import './header';
+@import './nav';
+@import './page';
+@import './section_h1';
+@import './swiper';
+
+* {
+    // outline: 1px solid red;
+    box-sizing: border-box;
 }
 
-@import './swiper';
-@import './header';
-@import './aside';
+aside {
+    display: none;
+}
+
+@media (min-width: 1366px) {
+    body {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    aside {
+        display: block; 
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    main {
+        flex: 1;
+        min-width: 0;
+    }
+    
+}

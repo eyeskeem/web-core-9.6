@@ -1,0 +1,117 @@
+nav {
+    display: flex;
+    margin-top: 32px;
+}
+
+.buttons {
+    width: 100%;
+    overflow-x: auto;      
+    overflow-y: hidden;  
+    white-space: nowrap; 
+    scrollbar-width: none;
+}
+
+
+.buttons_scroll {
+    display: flex;
+    overflow-x: auto;
+}
+
+.navigation:focus {
+    padding: 6px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    outline: none;
+    background-color: white;
+}
+
+.navigation {
+    margin-left: 16px;
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 2px none;
+    border-radius: 6px;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 100;
+}
+
+@media(min-width: 768px) and (max-width: 1365px) {
+
+nav {
+    display: flex;
+    margin-top: 32px;
+}
+
+.buttons {
+    width: 100%;
+    overflow-x: auto;      
+    overflow-y: hidden;  
+    white-space: nowrap; 
+    scrollbar-width: none;
+}
+
+.buttons_scroll {
+    display: flex;
+    gap: 12px;
+}
+
+.navigation:focus {
+    padding: 6px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    outline: none;
+    background-color: white;
+}
+
+.navigation {
+    margin-left: 16px;
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 2px none;
+    border-radius: 6px;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 100;
+}
+}
+
+
+@media(min-width: 1366px) {
+
+nav {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.buttons_scroll {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.navigation:focus {
+    padding: 6px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    outline: none;
+    background-color: white;
+}
+
+.navigation {
+    white-space: nowrap;
+    margin-left: 16px;
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 2px none;
+    border-radius: 6px;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 100;
+}
+}
