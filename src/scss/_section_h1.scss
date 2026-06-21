@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 24px;
 }
 
 .h1_blue--bar {
@@ -15,13 +16,22 @@
     margin-left: 12px;
 }
 
-@media(min-width: 1366px) and (max-width: 2000px) {
+@media(min-width: 768px) and (max-width: 1365px) {
+
+    .section_h1 {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+    }
+}
+
+@media(min-width: 1366px) {
 
 
 .section_h1 {
     display: flex;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 42px;
 }
 
 .h1_blue--bar {
@@ -33,27 +43,5 @@
     font-size: 28px;
     font-weight: 700;
     margin-left: 24px;
-}
-}
-
-
-@media(min-width: 1120px) and (max-width: 1600px) {
-
-.section_h1 {
-    display: flex;
-    align-items: center;
-    margin-top: 42px;
-}
-
-.h1_blue--bar {
-    display: flex;
-}
-
-.service_and_status {
-    display: flex;
-    margin-left: 30px;
-    font-family: 'TTlakes';
-    font-size: 28px;
-    font-weight: 700;
 }
 }

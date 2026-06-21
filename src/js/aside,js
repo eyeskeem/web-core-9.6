@@ -1,0 +1,13 @@
+const burgerBtn = document.querySelector(".burger");
+const aside = document.querySelector("aside");
+const closeBtn = document.querySelector(".X");
+
+if (burgerBtn && aside && closeBtn) {
+  burgerBtn.addEventListener("click", () => {
+    aside.classList.add("open");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    aside.classList.remove("open");
+  });
+}

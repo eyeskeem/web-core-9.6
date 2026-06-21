@@ -1,5 +1,6 @@
 let brandsSwiper;
 
+
 function initSwiper() {
   if (window.innerWidth < 768 && !brandsSwiper) {
     brandsSwiper = new Swiper(".brandsSwiper", {

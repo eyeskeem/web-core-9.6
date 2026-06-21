@@ -14,9 +14,17 @@ $text: #fff;
     box-sizing: border-box;
 }
 
-aside {
-    display: none;
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    min-height: 100vh;
 }
+
+main {
+    width: 100%;
+    min-width: 0;
+}
+
 
 @media (min-width: 1366px) {
     body {
