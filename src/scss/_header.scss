@@ -56,12 +56,11 @@ header {
     background-color: #eaeaea;
 }
 
-.blue-line {
-    position: flex;
+.header_blue-line {
+    position: absolute;
     height: 1px;
     width: 100%;
     z-index: 100;
-    margin-top: 24px;
     color: #41f6d7;
     background-color: #D9FFF5;
  }
@@ -128,12 +127,11 @@ header {
     background-color: #eaeaea;
 }
 
-.blue-line {
+.header_blue-line {
     position: absolute;
     height: 1px;
     width: 100%;
     z-index: 100;
-    margin-top: 24px;
     color: #41f6d7;
     background-color: #D9FFF5;
 }

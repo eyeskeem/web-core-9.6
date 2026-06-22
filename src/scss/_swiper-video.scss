@@ -1,0 +1,213 @@
+    .swiper__video-tech {
+        overflow-y: auto;
+        width: 100%;
+    }
+
+    .blue-line {
+        display: flex;
+        height: 1px;
+        max-width: 100%;
+        background-color: #D9FFF5;
+    }
+    
+    .video-title {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 24px;
+        color: #7E7E82;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .swiper__video-tech .swiper {
+        width: 100%;
+        margin-top: 16px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        background-color: #F8F8F8;
+    }
+
+    .swiper__video-tech .swiper-slide {
+        display: flex;
+        gap: 16px;
+        height: 160px;
+        width: 240px;
+        margin-left: 16px;
+    }
+
+    .swiper__video-tech .swiper-slide img {
+        width: 100%;
+    }
+
+
+    .open-hide-video {
+        display: none;
+    }
+
+
+@media (min-width: 768px) and (max-width: 1365px) {
+
+    .swiper-pagination-video {
+        display: none;
+    }
+
+    .video-title {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 32px;
+        color: #7E7E82;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .swiper__video-tech {
+        max-width: 100%;
+        background-color: white;
+    }
+    .swiper__video-tech .swiper {
+        max-width: 100%;
+        padding: 32px;
+    }
+    .swiper__video-tech .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        justify-content: space-between;
+        gap: 16px 20px;
+    }
+
+
+    .swiper__video-tech .swiper-slide {
+        width: 240px;
+        height: 160px;
+        margin-left: 0;
+    }
+    .swiper__video-tech .swiper-slide img {
+        width: 100%;
+    }
+
+    .swiper__video-tech .blue-line {
+        height: 1px;
+        max-width: 100%;
+        background-color: #D9FFF5;
+    }
+
+    .open-hide-video {
+        display: block;
+    }
+
+    .show-more-video {
+        margin-top: 24px;
+        border: none;
+        background: transparent;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1C21;
+        cursor: pointer;
+    }
+
+
+    .show-more-video {
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper__video-tech .hidden-video { 
+        display: none;
+    }
+
+    .swiper__video-tech .hidden-video.show {
+        display: flex;
+    }
+    .show-more__video {
+    transition: transform 0.3s ease;
+    }
+    .show-more-video.open .show-more__video {
+        transform: rotate(180deg);
+    }
+}
+
+
+@media(min-width: 1366px) {
+
+    
+.swiper-pagination-video {
+    display: none;
+}
+
+.video-title {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    color: #7E7E82;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.swiper__video-tech {
+    max-width: 100%;
+    background-color: white;
+}
+.swiper__video-tech .swiper {
+    max-width: 100%;
+    padding: 32px;
+}
+.swiper__video-tech .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: space-between;
+    gap: 16px 20px;
+}
+
+
+.swiper__video-tech .swiper-slide {
+    width: 240px;
+    height: 160px;
+    margin-left: 0;
+}
+.swiper-slide img {
+    width: 100%;
+}
+
+.blue-line {
+    height: 1px;
+    max-width: 100%;
+    background-color: #D9FFF5;
+}
+
+.open-hide-video {
+    display: block;
+}
+
+.show-more-video {
+    margin-top: 24px;
+    border: none;
+    background: transparent;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+    cursor: pointer;
+}
+
+
+    .show-more {
+        display: flex;
+        align-items: center;
+    }
+    .swiper__video-tech .hidden_video-pc {
+        display: none;
+    }
+    .swiper__video-tech .hidden_video-pc.show {
+        display: flex;
+    }
+    .show-more__icon {
+    transition: transform 0.3s ease;
+    }
+    .show-more.open .show-more__icon {
+    transform: rotate(180deg);
+    }
+}

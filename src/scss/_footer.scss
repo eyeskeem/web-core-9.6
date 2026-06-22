@@ -1,0 +1,120 @@
+footer {
+    font-family: 'TTlakes';
+    font-weight: 500;
+    font-size: 14px;
+    color: #7E7E82;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.footer__apesong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__privacy-policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.footer__public-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 19px;
+}
+
+
+
+@media(min-width: 768px) and (max-width: 1365px){
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .blue-line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+}
+    
+.footer__copyright,
+.footer__apesong {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px 42px 24px;
+}
+
+.footer__privacy-policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0px 42px 0;
+}
+
+.footer__public-offer {
+    max-width: 300px;
+    text-align: right;
+    align-items: center;
+    padding: 32px 24px 42px 24px;
+}
+}
+
+
+@media(min-width: 1366px) {
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .blue-line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+}
+    
+.footer__copyright,
+.footer__apesong {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 42px 31px;
+}
+
+.footer__privacy-policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0px 42px 0;
+}
+
+.footer__public-offer {
+    max-width: 380px;
+    text-align: right;
+    align-items: center;
+    padding: 32px 33px 42px 0;
+}
+}

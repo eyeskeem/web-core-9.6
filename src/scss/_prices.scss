@@ -1,0 +1,145 @@
+* {
+    font-family: 'TTlakes';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.swiper__prices {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.swiper__prices .pricesSwiper {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.swiper__prices .swiper-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media(min-width: 768px) and (max-width: 1365px){
+    
+.prices-title {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 24px;
+    font-size: 16px;
+    color: #7E7E82;
+    background-color: white;
+}
+
+.pricesSwiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 24px 0 12px;
+}
+
+
+.price-card:first-child {
+    border-bottom: none;
+    color: #7E7E82;
+    background-color: transparent;
+}
+.price-card {
+    display: grid;
+    grid-template-columns: 1fr 120px 120px 120px;
+    align-items: center;
+    min-height: 64px;
+    width: 100%;
+    padding: 0 24px 0 24px;
+    background-color: white;
+    border-bottom: 1px solid #EAEAEA;
+    border-radius: 5px;
+    color: #000000;
+}
+.prices-button {
+    justify-self: end;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+.prices-button img {
+    width: 120px;
+    height: 32px;
+}
+
+.prices-info {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 420px;
+}
+.prices-offer {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    font-weight: 700;
+    color: #1B1C21;
+}
+}
+
+
+@media(min-width: 1366px) {
+
+.prices-title {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    font-size: 16px;
+    color: #7E7E82;
+    background-color: white;
+}
+
+.pricesSwiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 32px 0 12px;
+}
+
+
+.price-card:first-child {
+    border-bottom: none;
+    color: #7E7E82;
+    background-color: transparent;
+}
+.price-card {
+    display: grid;
+    grid-template-columns: 1fr 190px 190px 190px;
+    align-items: center;
+    min-height: 64px;
+    width: 100%;
+    padding: 0 24px 0 24px;
+    background-color: white;
+    border-bottom: 1px solid #EAEAEA;
+    border-radius: 5px;
+    color: #000000;
+}
+.prices-button {
+    justify-self: end;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+.prices-button img {
+    width: 120px;
+    height: 32px;
+}
+
+.prices-info {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 420px;
+}
+.prices-offer {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    font-weight: 700;
+    color: #1B1C21;
+}
+}
