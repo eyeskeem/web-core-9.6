@@ -4,10 +4,12 @@
     font-size: 14px;
 }
 
+@media(max-width: 767px) {
+
 .swiper__prices {
-    width: 100%;
-    min-width: 0;
     overflow: hidden;
+    width: 100%;
+    background-color: #F8F8F8;
 }
 
 .swiper__prices .pricesSwiper {
@@ -16,13 +18,104 @@
     box-sizing: border-box;
 }
 
-.swiper__prices .swiper-wrapper {
+.prices-title {
+    margin: 16px 0 16px 16px;
+    font-size: 16px;
+    color: #7E7E82;
+}
+
+.pricesSwiper {
+    padding-top: 16px;
+    background-color: #F8F8F8;
+}
+
+.pricesSwiper .swiper-wrapper {
+    display: flex;
     width: 100%;
     box-sizing: border-box;
 }
 
+.price-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 260px;
+  height: 200px;
+  padding-left: 16px;
+  border-radius: 6px;
+  background: white;
+}
+
+.price-card:first-child {
+    display: none;
+}
+
+.price-card .service,
+.price-card .price,
+.price-card .time {
+    display: block;
+    width: 200px;
+}
+
+.price-card .service::before,
+.price-card .price::before,
+.price-card .time::before {
+  display: block;
+  padding-top:8px;
+  color: #7E7E82;
+}
+.price-card .service::before {
+  content: "Ремонтные услуги";
+  padding-top: 16px;
+}
+.price-card .price::before {
+  content: "Цена";
+}
+.price-card .time::before {
+  content: "Срок";
+}
+.swiper-slide.price-card {
+    gap: 3px;
+}
+
+.prices-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.prices-button img {
+    width: 120px;
+    height: 32px;
+}
+
+.prices-info {
+    margin-left: 16px;
+    color: #1B1C21;
+}
+
+.prices-pagination.prices-pagination {
+    position: static;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.prices-offer {
+    display: block;
+    margin: 16px 16px 0;
+    font-weight: 700;
+    color: #1B1C21;
+}
+}
+
+
 @media(min-width: 768px) and (max-width: 1365px){
-    
+
 .prices-title {
     display: flex;
     margin-top: 16px;
@@ -32,10 +125,21 @@
     background-color: white;
 }
 
+.pricesSwiper {
+    padding-top: 16px;
+    background-color: #F8F8F8;
+}
+
 .pricesSwiper .swiper-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 24px 0 12px;
+}
+
+.pricesSwiper .swiper-wrapper,
+.swiper-slide.price-card,
+.price-card {
+    box-sizing: border-box;
 }
 
 
@@ -44,12 +148,13 @@
     color: #7E7E82;
     background-color: transparent;
 }
-.price-card {
+.swiper-slide.price-card {
     display: grid;
     grid-template-columns: 1fr 120px 120px 120px;
     align-items: center;
     min-height: 64px;
     width: 100%;
+    margin: 0;
     padding: 0 24px 0 24px;
     background-color: white;
     border-bottom: 1px solid #EAEAEA;
@@ -85,19 +190,29 @@
 
 @media(min-width: 1366px) {
 
+.swiper__prices {
+    width: 100%;
+    background-color: white;
+}
+
 .prices-title {
     display: flex;
-    margin-top: 16px;
     margin-left: 32px;
+    padding: 16px 0 16px 0;
     font-size: 16px;
     color: #7E7E82;
     background-color: white;
 }
 
+.pricesSwiper {
+    padding-top: 16px;
+    background-color: #F8F8F8;
+}
+
 .pricesSwiper .swiper-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 32px 0 12px;
+    padding: 0 32px 0 32px;
 }
 
 
@@ -106,6 +221,11 @@
     color: #7E7E82;
     background-color: transparent;
 }
+
+.swiper-slide.price-card{
+    margin: 0;
+}
+
 .price-card {
     display: grid;
     grid-template-columns: 1fr 190px 190px 190px;
@@ -122,7 +242,7 @@
     justify-self: end;
     border: none;
     background: transparent;
-    padding: 0;
+    padding-right: 32px;
 }
 .prices-button img {
     width: 120px;
@@ -134,6 +254,9 @@
     margin-top: 32px;
     margin-left: 32px;
     width: 420px;
+}
+.swiper-pagination.prices-pagination {
+    display: none;
 }
 .prices-offer {
     display: flex;

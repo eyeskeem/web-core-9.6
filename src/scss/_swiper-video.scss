@@ -68,18 +68,18 @@
     }
     .swiper__video-tech .swiper {
         max-width: 100%;
-        padding: 32px;
+        padding: 24px;
     }
     .swiper__video-tech .swiper-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 240px);
+        grid-template-columns: repeat(3, 224px);
         justify-content: space-between;
-        gap: 16px 20px;
+        gap: 16px 0px;
     }
 
 
     .swiper__video-tech .swiper-slide {
-        width: 240px;
+        width: 224px;
         height: 160px;
         margin-left: 0;
     }
@@ -159,7 +159,7 @@
     display: grid;
     grid-template-columns: repeat(4, 240px);
     justify-content: space-between;
-    gap: 16px 20px;
+    gap: 16px 0px;
 }
 
 
@@ -168,7 +168,7 @@
     height: 160px;
     margin-left: 0;
 }
-.swiper-slide img {
+.swiper__video-tech .swiper-slide img {
     width: 100%;
 }
 

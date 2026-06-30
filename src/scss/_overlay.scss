@@ -1,0 +1,13 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 99;
+}
