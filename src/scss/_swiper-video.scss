@@ -30,14 +30,25 @@
 
     .swiper__video-tech .swiper-slide {
         display: flex;
-        gap: 16px;
+        position: relative;
         height: 160px;
         width: 240px;
-        margin-left: 16px;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
     }
 
-    .swiper__video-tech .swiper-slide img {
-        width: 100%;
+    .text-video {
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .strelka-video {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        width: 40px;
     }
 
 
@@ -72,19 +83,31 @@
     }
     .swiper__video-tech .swiper-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 224px);
         justify-content: space-between;
-        gap: 16px 0px;
+        grid-template-columns: repeat(3, minmax(224px, 1fr));
+        gap: 16px 24px;
     }
-
 
     .swiper__video-tech .swiper-slide {
-        width: 224px;
+        display: flex;
+        position: relative;
         height: 160px;
-        margin-left: 0;
-    }
-    .swiper__video-tech .swiper-slide img {
         width: 100%;
+        margin: 0;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+    }
+    .text-video {
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .strelka-video {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        width: 40px;
     }
 
     .swiper__video-tech .blue-line {
@@ -155,22 +178,36 @@
     max-width: 100%;
     padding: 32px;
 }
+
 .swiper__video-tech .swiper-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 240px);
     justify-content: space-between;
-    gap: 16px 0px;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 16px 24px;
 }
-
 
 .swiper__video-tech .swiper-slide {
-    width: 240px;
+    display: flex;
+    position: relative;
     height: 160px;
-    margin-left: 0;
-}
-.swiper__video-tech .swiper-slide img {
     width: 100%;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
 }
+.text-video {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.strelka-video {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+}
+
 
 .blue-line {
     height: 1px;

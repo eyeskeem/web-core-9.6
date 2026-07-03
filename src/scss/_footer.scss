@@ -1,5 +1,6 @@
 footer {
     position: relative;
+    margin-top: 14px;
     font-family: 'TTlakes';
     font-weight: 500;
     font-size: 14px;
@@ -49,6 +50,7 @@ footer .blue-line {
     position: absolute;
     height: 1px;
     width: 100%;
+    margin-top: 30px;
 }
     
 .footer__copyright,
@@ -85,6 +87,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 50px;
 }
 
 footer .blue-line {
