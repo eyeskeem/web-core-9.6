@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 aside {
     display: none;
     flex-direction: column;
@@ -116,10 +117,9 @@ aside.open {
 
 .aside-contact__icons {
     display: flex;
-    padding-top: 240px;
+    margin-top: auto;
     margin-left: 24px;
     gap: 16px;
-    margin-top: auto;
 }
 .contact-icons {
     border: none;
@@ -163,7 +163,6 @@ aside.open {
 }
 
 
-
 .aside-lang {
     display: flex;
     flex-direction: row;
@@ -204,15 +203,18 @@ aside.open {
 }
 
 
+
 @media (min-width: 1366px) {
 
 aside {
     display: flex;
+    flex-direction: column;
     position: static;
-    width: 300px;
-    height: auto;
     flex-shrink: 0;
-    box-shadow: none;
+}
+
+.aside-contact__icons {
+    margin-top: auto;
 }
 
 .X {
