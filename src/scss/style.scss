@@ -37,19 +37,12 @@ main {
 
 @media (min-width: 1366px) {
     body {
-        display: flex;
         min-height: 100vh;
     }
 
-    aside {
-        display: flex; 
-        width: 300px;
-        flex-shrink: 0;
-    }
-
     main {
-        flex: 1;
+        margin-left: 300px;
+        width: calc(100% - 300px);
         min-width: 0;
     }
-    
 }
